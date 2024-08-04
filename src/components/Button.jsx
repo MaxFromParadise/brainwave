@@ -13,7 +13,7 @@ export default function Button({
 	} ${white ? 'text-n-8' : 'text-n-1'} ${className || ''}`;
 	const spanClasses = 'z-10 relative';
 	const renderButton = () => (
-		<button className={classes}>
+		<button onClick={onClick} className={classes}>
 			<span className={spanClasses}>{children}</span>
 			{ButtonSvg(white)}
 		</button>
